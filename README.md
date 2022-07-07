@@ -24,20 +24,27 @@ $ docker-compose run php composer create-project --prefer-dist laravel/laravel .
 ```console
 $ docker-compose up -d
 ```
-### `.env`をdocker-compose.ymlで設定した値に変更する
+### `.env`ファイルをdocker-compose.ymlで設定した値に変更する
 ```
 DB_CONNECTION=mysql
 DB_HOST=db
-DB_PORT=3307
+DB_PORT=3306
 DB_DATABASE=laravel_db
 DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
 ```
 
+### コンテナに入る
+```console
+$ docker exec -it laravel_php /bin/bash
+```
 ### データベースの接続を確認
 ```console
-$ docker-compose run php composer create-project --prefer-dist laravel/laravel .
+$ php artisan migrate
 ```
+
+
+
 
 
 
