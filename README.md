@@ -25,7 +25,7 @@ docker-compose run php composer create-project --prefer-dist laravel/laravel .
 docker-compose up -d
 ```
 ### ブラウザでLaravelのwelcomeページを確認
-`http://localhost:8080/`
+`http://localhost:8080`
 <br />
 <br />
 ### `.env`ファイルをdocker-compose.ymlで設定した値に変更する
