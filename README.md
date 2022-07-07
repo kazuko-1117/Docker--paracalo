@@ -1,5 +1,5 @@
 ## このリポジトリについて
-dockerで開発環境を共有するためのリポジトリです。
+ Dockerで開発環境を共有するためのリポジトリです。
 
 ## 環境
 Webサーバ：apache  
@@ -7,6 +7,8 @@ Webサーバ：apache
 言語：php7.2  
 フレームワーク：Laravel  
 
+### Dockerをインストール
+[参考](https://qiita.com/ama_keshi/items/b4c47a4aca5d48f2661c)
 ### 任意のディレクトリにリポジトリをクローン
 ```
 git clone https://github.com/kazuko-1117/Docker-test.git
