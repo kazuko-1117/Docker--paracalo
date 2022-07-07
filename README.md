@@ -9,21 +9,25 @@ Webサーバ：apache
 
 ### 任意のディレクトリにリポジトリをクローン
 ```
-$ git clone https://github.com/kazuko-1117/Docker--paracalo.git
+git clone https://github.com/kazuko-1117/Docker-test.git
 ```
 
 ### ルートディレクトリに移動
 ```console
-$ cd Docker-test
+cd Docker-test
 ```
 ### コンテナを作り、Laravelのプロジェクトを作成
 ```console
-$ docker-compose run php composer create-project --prefer-dist laravel/laravel .
+docker-compose run php composer create-project --prefer-dist laravel/laravel .
 ```
 ### コンテナをバックグラウンドで起動
 ```console
-$ docker-compose up -d
+docker-compose up -d
 ```
+### ブラウザでLaravelのwelcomeページを確認
+`http://localhost:8080/`
+<br />
+<br />
 ### `.env`ファイルをdocker-compose.ymlで設定した値に変更する
 ```
 DB_CONNECTION=mysql
@@ -36,12 +40,13 @@ DB_PASSWORD=laravel_pass
 
 ### コンテナに入る
 ```console
-$ docker exec -it laravel_php /bin/bash
+docker exec -it laravel_php /bin/bash
 ```
 ### データベースの接続を確認
 ```console
-$ php artisan migrate
+php artisan migrate
 ```
+
 
 
 
