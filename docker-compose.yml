@@ -14,7 +14,7 @@ services:
    # コンテナとホスト側のディレクトリを同期する場所の指定。laravelのソースが入る予定の場所
    volumes:
      - ./src:/var/www/html
-     - ./app/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+     - ./app/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
  # MySQLを動かすコンテナ
  db:
    # mysqlイメージのプラットフォームであるamd64を取得
