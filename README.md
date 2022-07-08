@@ -1,12 +1,15 @@
 ## このリポジトリについて
  Dockerで開発環境を共有するためのリポジトリです。
-
+<br />
+<br />
 ## 環境
 Webサーバ：apache  
 データベース：mysql5.7  
 言語：php7.2  
 フレームワーク：Laravel  
-
+<br />
+<br />
+## 方法
 ### Dockerをインストール
 [参考](https://qiita.com/ama_keshi/items/b4c47a4aca5d48f2661c)
 ### 任意のディレクトリにリポジトリをクローン
